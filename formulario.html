@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ptt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVE - carros esportivos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #cf0e0e;
+        }
+
+        .form-control {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img style="width: 140px;" src="./logo/OIG2-fotor-bg-remover-20240530172529-fotor-bg-remover-20240530175855.png"
+            alt="Logo">
+    </div>
+
+
+    <main style="flex-grow: 1; display: flex; justify-content: center; align-items: center;" >
+        <form
+            style="display: flex; flex-direction: column; width: 300px; padding: 20px; border: 0.5px solid black; border-radius: 10px; box-shadow: 0 0 10px rgba(255, 1, 1, 0.1); background-color: white; color: black; "
+            action="index.html">
+            <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="exemplo@" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="pwd" class="form-label">Senha:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="1234" name="pswd">
+            </div>
+            <div class="form-check mb-3">
+                <label class="form-check-label">
+                    <input style="margin-bottom: 10px;" class="form-check-input" type="checkbox" name="remember"> Lembre
+                    de mim
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">ENTRAR</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
